@@ -138,7 +138,8 @@ export default {
     },
     // 获取更多新闻数据
     fetchMoreData: function () {
-      axios.post('http://browser.umeweb.com/api/news/baidu')
+      // TODO 代入新闻API URL
+      axios.post('新闻API')
         .then(response => {
           /*
           // 合并数据
