@@ -63,7 +63,8 @@ export default {
     },
     // 获取最新新闻数据列表
     fetchData: function () {
-      axios.post('http://browser.umeweb.com/api/news/baidu')
+      // TODO 代入新闻API URL
+      axios.post('新闻API')
         .then(response => {
           // 初始化新闻内容和id数组，并添加进state
           let newslist = response.data.data.result;
